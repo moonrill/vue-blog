@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* Breakpoint */
+  --breakpoint-2xl: 90rem;
+  --breakpoint-3xl: 120rem;
+
+  /* Font */
+  --font-inter: 'Inter', sans-serif;
+  --font-kumbh: 'Kumbh Sans', sans-serif;
+
+  /* Color */
+  --color-yellow-55: #ffd11a;
+  --color-yellow-60: #ffd633;
+  --color-yellow-70: #ffe066;
+  --color-yellow-80: #ffeb99;
+  --color-yellow-90: #fff5cc;
+  --color-yellow-95: #fffae5;
+  --color-yellow-97: #fffcf0;
+  --color-yellow-99: #fbfbfe;
+
+  --color-dark-08: #141414;
+  --color-dark-10: #1a1a1a;
+  --color-dark-15: #262626;
+  --color-dark-20: #333333;
+  --color-dark-25: #404040;
+  --color-dark-30: #4d4d4d;
+  --color-dark-35: #595959;
+  --color-dark-40: #666666;
+
+  --color-grey-50: #7e7e81;
+  --color-grey-60: #98989a;
+  --color-grey-70: #b3b3b3;
+  --color-grey-80: #cccccc;
+  --color-grey-90: #e4e4e7;
+  --color-grey-95: #f1f1f3;
+  --color-grey-97: #f7f7f8;
+  --color-grey-99: #fcfcfd;
+}
+
+html {
+  @apply font-inter;
+}
