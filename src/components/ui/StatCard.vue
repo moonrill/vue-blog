@@ -6,7 +6,7 @@ defineProps({
 </script>
 <template>
   <div class="flex px-4 xl:px-10">
-    <div class="py-5 xl:py-[30px] 2xl:py-[50px] flex flex-col">
+    <div class="py-5 2xl:py-[30px] 3xl:py-[50px] flex flex-col">
       <h1 class="font-semibold text-2xl xl:text-3xl">
         {{ number }} <span class="text-yellow-55">+</span>
       </h1>

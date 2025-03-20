@@ -1,7 +1,7 @@
 <script setup>
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 import { useWindowSize } from '@vueuse/core'
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import laptopLogoUrl from '../assets/logo/laptop-logo.png'
 import mobileLogoUrl from '../assets/logo/mobile-logo.png'
@@ -20,20 +20,36 @@ const navLinks = [
 ]
 
 const isMenuOpen = ref(false)
+const scrollY = ref(0)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
 const menuIcon = computed(() => (isMenuOpen.value ? XMarkIcon : Bars3BottomRightIcon))
+
+const updateScroll = () => {
+  scrollY.value = window.scrollY
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', updateScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', updateScroll)
+})
+
+const navbarClasses = computed(() => ({
+  'backdrop-blur-lg bg-dark-08/80 shadow-md': scrollY.value > 10,
+  'bg-dark-10': scrollY.value <= 10,
+}))
 </script>
 
 <template>
-  <header class="fixed left-0 right-0 z-50">
+  <header class="fixed left-0 right-0 z-[100] transition-all duration-300" :class="navbarClasses">
     <TopBanner />
-    <nav
-      class="py-4 px-4 2xl:py-5 2xl:px-20 3xl:px-[162px] dark:bg-dark-10 border-y-1 dark:border-y-dark-15"
-    >
+    <nav class="py-4 px-4 2xl:py-5 2xl:px-20 3xl:px-[162px] border-y-1 dark:border-y-dark-15">
       <div class="flex justify-between items-center">
         <router-link to="/">
           <img :src="logoUrl" alt="logo" />
@@ -51,7 +67,7 @@ const menuIcon = computed(() => (isMenuOpen.value ? XMarkIcon : Bars3BottomRight
         </div>
         <router-link
           v-if="width >= 768"
-          to="/"
+          to="/contact"
           class="text-sm 3xl:text-base px-3.5 py-2.5 bg-yellow-55 text-dark-08 rounded-lg hidden md:flex justify-center items-center hover:bg-yellow-400"
         >
           Contact Us
