@@ -32,7 +32,7 @@ const menuIcon = computed(() => (isMenuOpen.value ? XMarkIcon : Bars3BottomRight
   <header class="fixed left-0 right-0 z-50">
     <TopBanner />
     <nav
-      class="py-4 px-5 2xl:py-5 2xl:px-20 3xl:px-[162px] dark:bg-dark-10 border-y-1 dark:border-y-dark-15"
+      class="py-4 px-4 2xl:py-5 2xl:px-20 3xl:px-[162px] dark:bg-dark-10 border-y-1 dark:border-y-dark-15"
     >
       <div class="flex justify-between items-center">
         <router-link to="/">

@@ -7,5 +7,6 @@ useTitle('Home | FutureTech')
 </script>
 <template>
   <Hero />
+  <div class="h-[100px]"></div>
 </template>
 <style scoped></style>
