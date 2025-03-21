@@ -17,7 +17,7 @@ import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
       class="flex flex-col gap-[30px] xl:gap-[100px] xl:basis-[60%] 2xl:basis-[60%] 3xl:basis-[58%]"
     >
       <div
-        class="pt-10 md:pt-[100px] 3xl:pt-[150px] px-4 2xl:px-0 2xl:ps-20 3xl:ps-[162px] 2xl:pe-10 3xl:pe-[50px]"
+        class="pt-10 md:pt-[100px] 3xl:pt-[240px] px-4 2xl:px-0 2xl:ps-20 3xl:ps-[162px] 2xl:pe-10 3xl:pe-[50px]"
       >
         <div class="flex flex-col gap-3.5 2xl:gap-5 3xl:gap-[30px]">
           <h2
@@ -44,16 +44,18 @@ import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
         </div>
         <div></div>
       </div>
-      <div class="grid grid-cols-3 divide-x divide-dark-15 border-t border-dark-15">
-        <StatCard number="300" label="Resources available" class="2xl:ps-20 3xl:ps-[162px]" />
-        <StatCard number="12k" label="Total Downloads" />
-        <StatCard number="10k" label="Active Users" />
+      <div class="border-t border-dark-15">
+        <div class="grid grid-cols-3 divide-x divide-dark-15 px-4 2xl:ps-20 3xl:ps-[162px]">
+          <StatCard number="300" label="Resources available" />
+          <StatCard number="12K" label="Total Downloads" class="ps-5 lg:ps-[50px]" />
+          <StatCard number="10K" label="Active Users" class="ps-5 lg:ps-[50px]" />
+        </div>
       </div>
     </div>
     <div
-      class="relative w-full xl:basis-[40%] 2xl:basis-[40%] 3xl:basis-[42%] 2xl:border-l 2xl:border-dark-15 px-10 pt-[100px] md:pt-[150px] 2xl:pt-[250px] pb-10"
+      class="relative w-full xl:basis-[40%] 2xl:basis-[40%] 3xl:basis-[42%] 2xl:border-l 2xl:border-dark-15 px-10 pt-[100px] md:pt-[150px] 2xl:pt-[250px] 3xl:pt-[300px] pb-10"
     >
-      <div class="flex flex-col gap-5 xl:gap-[30px] relative">
+      <div class="flex flex-col h-full justify-end gap-5 xl:gap-[30px] relative">
         <div class="relative z-50 flex p-2 bg-dark-08 border border-dark-15 w-fit rounded-full">
           <img
             :src="avatar1"
@@ -102,30 +104,31 @@ import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
       />
     </div>
   </div>
-  <div
-    class="w-full grid grid-cols-1 xl:grid-cols-3 border border-dark-15 px-4 2xl:px-20 xl:divide-x-2 col-[16_/_span_16]"
-  >
-    <HeroFeatureCard
-      title="Latest News Updates"
-      subTitle="Stay Current"
-      description="Over 1,000 articles published monthly"
-      :icon="icon1"
-      class="2xl:pe-[50px]"
-    />
-    <HeroFeatureCard
-      title="Expert Contributors"
-      subTitle="Trusted Insights"
-      description="50+ renowned AI experts on our team"
-      :icon="icon2"
-      class="2xl:px-[50px]"
-    />
-    <HeroFeatureCard
-      title="Global Readership"
-      subTitle="Worldwide Impact"
-      description="2 million monthly readers"
-      :icon="icon3"
-      class="2xl:ps-[50px]"
-    />
+  <div class="w-full border border-dark-15">
+    <div
+      class="px-4 2xl:px-20 3xl:px-[162px] grid grid-cols-1 lg:divide-x divide-dark-15 xl:grid-cols-3 xl:gap-[50px] 3xl:gap-20"
+    >
+      <HeroFeatureCard
+        title="Latest News Updates"
+        subTitle="Stay Current"
+        description="Over 1,000 articles published monthly"
+        :icon="icon1"
+        class="xl:pe-[50px] 3xl:pe-20"
+      />
+      <HeroFeatureCard
+        title="Expert Contributors"
+        subTitle="Trusted Insights"
+        description="50+ renowned AI experts on our team"
+        :icon="icon2"
+        class="xl:pe-[50px] 3xl:pe-20"
+      />
+      <HeroFeatureCard
+        title="Global Readership"
+        subTitle="Worldwide Impact"
+        description="2 million monthly readers"
+        :icon="icon3"
+      />
+    </div>
   </div>
 </template>
 <style lang=""></style>

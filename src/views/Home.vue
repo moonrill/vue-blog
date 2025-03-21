@@ -8,6 +8,10 @@ useTitle('Home | FutureTech')
 </script>
 <template>
   <Hero />
-  <HeadBanner />
+  <HeadBanner
+    :showButton="false"
+    :badgeLabel="'Unlock the Power of'"
+    :bannerTitle="'FutureTech Features'"
+  />
 </template>
 <style scoped></style>
