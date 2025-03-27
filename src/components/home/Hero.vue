@@ -7,8 +7,8 @@ import avatar4 from '@/assets/Imageavatar-4.jpg'
 import icon1 from '@/assets/icons/icon-1.png'
 import icon2 from '@/assets/icons/icon-2.png'
 import icon3 from '@/assets/icons/icon-3.png'
-import HeroFeatureCard from './ui/HeroFeatureCard.vue'
-import StatCard from './ui/StatCard.vue'
+import HeroFeatureCard from '../ui/HeroFeatureCard.vue'
+import StatCard from '../ui/StatCard.vue'
 import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
 </script>
 <template>
