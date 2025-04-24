@@ -7,7 +7,7 @@ console.log(isDark.value)
 </script>
 <template>
   <div
-    class="dark:bg-dark-08 pt-10 pb-3.5 sm:py-3 3xl:py-4 px-6 border-b-1 dark:border-b-dark-10 flex items-center justify-center"
+    class="dark:bg-dark-08 py-3.5 sm:py-3 2xl:py-4 px-6 border-b-1 dark:border-b-dark-10 flex items-center justify-center"
   >
     <router-link
       to="/"

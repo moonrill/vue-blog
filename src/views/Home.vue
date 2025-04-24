@@ -1,12 +1,10 @@
 <script setup>
-import Hero from '@/components/home/Hero.vue'
-import Navbar from '@/components/Navbar.vue'
-import HeadBanner from '@/components/ui/HeadBanner.vue'
-import FeatureCard from '@/components/ui/FeatureCard.vue'
 import futureTechBlogIcon from '@/assets/icons/future-tech-blog-icon.png'
 import researchInsightsIcon from '@/assets/icons/research-insights-blog-icon.png'
-import FeatureSection from '@/components/home/FeatureSection.vue'
 import ButtonSlider from '@/components/ButtonSlider.vue'
+import FeatureSection from '@/components/home/FeatureSection.vue'
+import Hero from '@/components/home/Hero.vue'
+import HeadBanner from '@/components/ui/HeadBanner.vue'
 import { useTitle } from '@vueuse/core'
 
 useTitle('Home | FutureTech')
