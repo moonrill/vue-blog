@@ -46,9 +46,9 @@ import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
       </div>
       <div class="border-t border-dark-15">
         <div class="grid grid-cols-3 divide-x divide-dark-15 px-4 2xl:ps-20 3xl:ps-[162px]">
-          <StatCard number="300" label="Resources available" />
-          <StatCard number="12K" label="Total Downloads" class="ps-5 lg:ps-[50px]" />
-          <StatCard number="10K" label="Active Users" class="ps-5 lg:ps-[50px]" />
+          <StatCard number="300" label="Resources available" duration="800" />
+          <StatCard number="12K" label="Total Downloads" class="ps-5 lg:ps-[50px]" duration="900" />
+          <StatCard number="10K" label="Active Users" class="ps-5 lg:ps-[50px]" duration="1000" />
         </div>
       </div>
     </div>

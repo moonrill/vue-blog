@@ -60,7 +60,7 @@ const navbarClasses = computed(() => ({
             :key="link.path"
             :to="link.path"
             :class="route.path === link.path ? 'bg-dark-08 border border-dark-20' : 'text-grey-50'"
-            class="text-sm 3xl:text-base font-medium px-[18px] py-2.5 rounded-lg"
+            class="text-sm 3xl:text-base font-medium px-[18px] py-2.5 rounded-lg hover:text-grey-60"
           >
             {{ link.name }}
           </router-link>
