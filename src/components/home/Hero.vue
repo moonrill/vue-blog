@@ -1,15 +1,15 @@
 <script setup>
 import abstractImgUrl from '@/assets/abstract-2.png'
+import icon1 from '@/assets/icons/icon-1.png'
+import icon2 from '@/assets/icons/icon-2.png'
+import icon3 from '@/assets/icons/icon-3.png'
 import avatar1 from '@/assets/Imageavatar-1.jpg'
 import avatar2 from '@/assets/Imageavatar-2.jpg'
 import avatar3 from '@/assets/Imageavatar-3.jpg'
 import avatar4 from '@/assets/Imageavatar-4.jpg'
-import icon1 from '@/assets/icons/icon-1.png'
-import icon2 from '@/assets/icons/icon-2.png'
-import icon3 from '@/assets/icons/icon-3.png'
+import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
 import HeroFeatureCard from '../ui/HeroFeatureCard.vue'
 import StatCard from '../ui/StatCard.vue'
-import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
 </script>
 <template>
   <div class="flex flex-col xl:flex-row border- border-dark-15">
@@ -46,9 +46,14 @@ import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
       </div>
       <div class="border-t border-dark-15">
         <div class="grid grid-cols-3 divide-x divide-dark-15 px-4 2xl:ps-20 3xl:ps-[162px]">
-          <StatCard number="300" label="Resources available" duration="800" />
-          <StatCard number="12K" label="Total Downloads" class="ps-5 lg:ps-[50px]" duration="900" />
-          <StatCard number="10K" label="Active Users" class="ps-5 lg:ps-[50px]" duration="1000" />
+          <StatCard number="300" label="Resources available" :duration="800" />
+          <StatCard
+            number="12K"
+            label="Total Downloads"
+            class="ps-5 lg:ps-[50px]"
+            :duration="900"
+          />
+          <StatCard number="10K" label="Active Users" class="ps-5 lg:ps-[50px]" :duration="1000" />
         </div>
       </div>
     </div>
@@ -114,6 +119,7 @@ import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
         description="Over 1,000 articles published monthly"
         :icon="icon1"
         class="xl:pe-[50px] 3xl:pe-20"
+        link="/"
       />
       <HeroFeatureCard
         title="Expert Contributors"
@@ -121,12 +127,14 @@ import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
         description="50+ renowned AI experts on our team"
         :icon="icon2"
         class="xl:pe-[50px] 3xl:pe-20"
+        link="/"
       />
       <HeroFeatureCard
         title="Global Readership"
         subTitle="Worldwide Impact"
         description="2 million monthly readers"
         :icon="icon3"
+        link="/"
       />
     </div>
   </div>

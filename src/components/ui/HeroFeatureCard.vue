@@ -5,6 +5,7 @@ const props = defineProps({
   subTitle: String,
   description: String,
   icon: String,
+  link: String,
 })
 </script>
 <template>
@@ -24,9 +25,12 @@ const props = defineProps({
             {{ props.subTitle }}
           </p>
         </div>
-        <div class="p-2.5 xl:p-3 3xl:p-3.5 rounded-full bg-yellow-55">
+        <router-link
+          :to="props.link"
+          class="p-2.5 xl:p-3 3xl:p-3.5 rounded-full bg-yellow-55 hover:bg-yellow-400"
+        >
           <ArrowUpRightIcon class="size-5 dark:text-black 3xl:size-6" />
-        </div>
+        </router-link>
       </div>
     </div>
     <p

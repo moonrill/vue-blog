@@ -1,7 +1,7 @@
 <script setup>
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 import { useWindowSize } from '@vueuse/core'
-import { computed, ref, onMounted, onUnmounted } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import laptopLogoUrl from '../assets/logo/laptop-logo.png'
 import mobileLogoUrl from '../assets/logo/mobile-logo.png'
@@ -41,7 +41,7 @@ onUnmounted(() => {
 })
 
 const navbarClasses = computed(() => ({
-  'backdrop-blur-lg bg-dark-08/80 shadow-md': scrollY.value > 10,
+  'backdrop-blur-2xl bg-dark-10/80 shadow-md': scrollY.value > 10,
   'bg-dark-10': scrollY.value <= 10,
 }))
 </script>
@@ -59,8 +59,12 @@ const navbarClasses = computed(() => ({
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            :class="route.path === link.path ? 'bg-dark-08 border border-dark-20' : 'text-grey-50'"
-            class="text-sm 3xl:text-base font-medium px-[18px] py-2.5 rounded-lg hover:text-grey-60"
+            :class="
+              route.path === link.path
+                ? 'bg-dark-08 border border-dark-20 hover:bg-dark-10'
+                : 'text-grey-50 hover:text-grey-60'
+            "
+            class="text-sm 3xl:text-base font-medium px-[18px] py-2.5 rounded-lg"
           >
             {{ link.name }}
           </router-link>

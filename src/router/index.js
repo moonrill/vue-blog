@@ -1,4 +1,6 @@
+import Dashboard from '@/views/Dashboard.vue'
 import Home from '@/views/Home.vue'
+import Login from '@/views/Login.vue'
 import News from '@/views/News.vue'
 import Podcasts from '@/views/Podcasts.vue'
 import Resources from '@/views/Resources.vue'
@@ -24,6 +26,20 @@ const routes = [
     path: '/resources',
     name: 'Resources',
     component: Resources,
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login,
+    meta: {
+      hideNavbar: true,
+    },
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
+    hideNavbar: true,
   },
 ]
 
