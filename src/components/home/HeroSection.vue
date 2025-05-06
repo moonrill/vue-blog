@@ -12,31 +12,31 @@ import HeroFeatureCard from '../ui/HeroFeatureCard.vue'
 import StatCard from '../ui/StatCard.vue'
 </script>
 <template>
-  <div class="flex flex-col xl:flex-row border- border-dark-15">
+  <div class="border- border-dark-15 flex flex-col xl:flex-row">
     <div
-      class="flex flex-col gap-[30px] xl:gap-[100px] xl:basis-[60%] 2xl:basis-[60%] 3xl:basis-[58%]"
+      class="3xl:basis-[58%] flex flex-col gap-[30px] xl:basis-[60%] xl:gap-[100px] 2xl:basis-[60%]"
     >
       <div
-        class="pt-10 md:pt-[100px] 3xl:pt-[240px] px-4 2xl:px-0 2xl:ps-20 3xl:ps-[162px] 2xl:pe-10 3xl:pe-[50px]"
+        class="3xl:pt-[240px] 3xl:ps-[162px] 3xl:pe-[50px] px-4 pt-10 md:pt-[100px] 2xl:px-0 2xl:ps-20 2xl:pe-10"
       >
-        <div class="flex flex-col gap-3.5 2xl:gap-5 3xl:gap-[30px]">
+        <div class="3xl:gap-[30px] flex flex-col gap-3.5 2xl:gap-5">
           <h2
-            class="font-kumbh font-medium dark:text-dark-40 leading-[120%] tracking-[-0.03em] text-lg md:text-[22px] 3xl:text-3xl"
+            class="font-kumbh dark:text-dark-40 3xl:text-3xl text-lg leading-[120%] font-medium tracking-[-0.03em] md:text-[22px]"
           >
             Your Journey to Tomorrow Begins Here
           </h2>
-          <div class="flex flex-col gap-2.5 3xl:gap-5">
+          <div class="3xl:gap-5 flex flex-col gap-2.5">
             <h1
-              class="font-kumbh font-medium leading-[120%] tracking-[-0.03em] text-3xl xl:text-5xl 2xl:text-[55px] 3xl:text-[70px] text-wrap"
+              class="font-kumbh 3xl:text-[70px] text-3xl leading-[120%] font-medium tracking-[-0.03em] text-wrap xl:text-5xl 2xl:text-[55px]"
             >
               Explore the Frontiers of Artificial Intelligence
             </h1>
             <h3
-              class="text-sm 2xl:text-base 3xl:text-lg text-grey-50 leading-[150%] tracking-[-0.03em]"
+              class="3xl:text-lg text-grey-50 text-sm leading-[150%] tracking-[-0.03em] 2xl:text-base"
             >
               Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a
               world where machines think, learn, and reshape the future.
-              <div class="hidden 3xl:inline">
+              <div class="3xl:inline hidden">
                 Join us on this visionary expedition into the heart of AI.
               </div>
             </h3>
@@ -44,8 +44,8 @@ import StatCard from '../ui/StatCard.vue'
         </div>
         <div></div>
       </div>
-      <div class="border-t border-dark-15">
-        <div class="grid grid-cols-3 divide-x divide-dark-15 px-4 2xl:ps-20 3xl:ps-[162px]">
+      <div class="border-dark-15 border-t">
+        <div class="divide-dark-15 3xl:ps-[162px] grid grid-cols-3 divide-x px-4 2xl:ps-20">
           <StatCard number="300" label="Resources available" :duration="800" />
           <StatCard
             number="12K"
@@ -58,75 +58,75 @@ import StatCard from '../ui/StatCard.vue'
       </div>
     </div>
     <div
-      class="relative w-full xl:basis-[40%] 2xl:basis-[40%] 3xl:basis-[42%] 2xl:border-l 2xl:border-dark-15 px-10 pt-[100px] md:pt-[150px] 2xl:pt-[250px] 3xl:pt-[300px] pb-10"
+      class="3xl:basis-[42%] 2xl:border-dark-15 3xl:pt-[300px] relative w-full px-10 pt-[100px] pb-10 md:pt-[150px] xl:basis-[40%] 2xl:basis-[40%] 2xl:border-l 2xl:pt-[250px]"
     >
-      <div class="flex flex-col h-full justify-end gap-5 xl:gap-[30px] relative">
-        <div class="relative z-50 flex p-2 bg-dark-08 border border-dark-15 w-fit rounded-full">
+      <div class="relative flex h-full flex-col justify-end gap-5 xl:gap-[30px]">
+        <div class="bg-dark-08 border-dark-15 relative z-50 flex w-fit rounded-full border p-2">
           <img
             :src="avatar1"
             alt="avatar"
-            class="w-[50px] h-[50px] 3xl:w-[60px] 3xl:h-[60px] rounded-full border-2 border-dark-40"
+            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 h-[50px] w-[50px] rounded-full border-2"
           />
           <img
             :src="avatar2"
             alt="avatar"
-            class="w-[50px] h-[50px] 3xl:w-[60px] 3xl:h-[60px] rounded-full border-2 border-dark-40 -ml-3"
+            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 -ml-3 h-[50px] w-[50px] rounded-full border-2"
           />
           <img
             :src="avatar3"
             alt="avatar"
-            class="w-[50px] h-[50px] 3xl:w-[60px] 3xl:h-[60px] rounded-full border-2 border-dark-40 -ml-3"
+            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 -ml-3 h-[50px] w-[50px] rounded-full border-2"
           />
           <img
             :src="avatar4"
             alt="avatar"
-            class="w-[50px] h-[50px] 3xl:w-[60px] 3xl:h-[60px] rounded-full border-2 border-dark-40 -ml-3"
+            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 -ml-3 h-[50px] w-[50px] rounded-full border-2"
           />
         </div>
 
         <div class="flex flex-col gap-1">
-          <h4 class="font-medium text-lg leading-[150%] tracking-[-0.03em] xl:text-2xl">
+          <h4 class="text-lg leading-[150%] font-medium tracking-[-0.03em] xl:text-2xl">
             Explore 1000+ resources
           </h4>
-          <p class="text-sm xl:text-lg text-grey-60">
+          <p class="text-grey-60 text-sm xl:text-lg">
             Over 1,000 articles on emerging tech trends and breakthroughs.
           </p>
         </div>
 
         <router-link
           to="/"
-          class="flex w-full md:w-fit border border-dark-15 rounded-lg px-5 py-3.5 justify-center items-center gap-1 text-sm 3xl:text-lg text-grey-60 hover:bg-dark-15"
+          class="border-dark-15 3xl:text-lg text-grey-60 hover:bg-dark-15 flex w-full items-center justify-center gap-1 rounded-lg border px-5 py-3.5 text-sm md:w-fit"
         >
           <div>Explore Resources</div>
-          <ArrowUpRightIcon class="size-5 dark:text-yellow-55 3xl:size-6" />
+          <ArrowUpRightIcon class="dark:text-yellow-55 3xl:size-6 size-5" />
         </router-link>
       </div>
 
       <img
         :src="abstractImgUrl"
         alt="abstract"
-        class="w-[400px] h-[286px] md:w-[622px] md:h-[422px] 3xl:w-[894px] 3xl:h-[606px] absolute top-0 left-[-20px] xl:left-0 z-[-10]"
+        class="3xl:w-[894px] 3xl:h-[606px] absolute top-0 left-[-20px] z-[-10] h-[286px] w-[400px] md:h-[422px] md:w-[622px] xl:left-0"
       />
     </div>
   </div>
-  <div class="w-full border border-dark-15">
+  <div class="border-dark-15 w-full border">
     <div
-      class="px-4 2xl:px-20 3xl:px-[162px] grid grid-cols-1 lg:divide-x divide-dark-15 xl:grid-cols-3 xl:gap-[50px] 3xl:gap-20"
+      class="3xl:px-[162px] divide-dark-15 3xl:gap-20 grid grid-cols-1 px-4 lg:divide-x xl:grid-cols-3 xl:gap-[50px] 2xl:px-20"
     >
       <HeroFeatureCard
         title="Latest News Updates"
         subTitle="Stay Current"
         description="Over 1,000 articles published monthly"
         :icon="icon1"
-        class="xl:pe-[50px] 3xl:pe-20"
-        link="/"
+        class="3xl:pe-20 xl:pe-[50px]"
+        link="/about"
       />
       <HeroFeatureCard
         title="Expert Contributors"
         subTitle="Trusted Insights"
         description="50+ renowned AI experts on our team"
         :icon="icon2"
-        class="xl:pe-[50px] 3xl:pe-20"
+        class="3xl:pe-20 xl:pe-[50px]"
         link="/"
       />
       <HeroFeatureCard

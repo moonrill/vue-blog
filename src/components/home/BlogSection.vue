@@ -4,15 +4,22 @@ import CommentButton from '../CommentButton.vue'
 import ShareButton from '../ShareButton.vue'
 import ButtonSlider from '../ButtonSlider.vue'
 import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
+import HeadBanner from '@/components/ui/HeadBanner.vue'
 </script>
 <template>
+  <HeadBanner
+    :showButton="true"
+    buttonLabel="View All Blogs"
+    badgeLabel="A Knowledge Treasure Trove"
+    bannerTitle="Explore FutureTech's In-Depth Blog Posts"
+  />
   <ButtonSlider />
   <div class="wrapper">
     <div class="3xl:gap-[50px] flex flex-col gap-[30px] py-10 lg:flex-row 2xl:gap-[40px]">
       <div class="flex h-fit items-center justify-between lg:w-[305px] 2xl:w-[390px]">
         <div class="flex items-center gap-2 lg:gap-2.5 xl:gap-4">
           <img
-            src="../../assets/Imageavatar-1.jpg"
+            src="../../assets/Imageavatar-2.jpg"
             alt="Avatar"
             class="3xl:h-20 3xl:w-20 h-[60px] w-[60px] rounded-full"
           />
