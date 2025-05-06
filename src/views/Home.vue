@@ -5,8 +5,8 @@ import ButtonSlider from '@/components/ButtonSlider.vue'
 import FeatureSection from '@/components/home/FeatureSection.vue'
 import Hero from '@/components/home/Hero.vue'
 import HeadBanner from '@/components/ui/HeadBanner.vue'
-import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
 import { useTitle } from '@vueuse/core'
+import BlogSection from '../components/home/BlogSection.vue'
 
 useTitle('Home | FutureTech')
 const futureTechFeatures = [
@@ -56,39 +56,6 @@ const researchInsightsFeatures = [
       badgeLabel="A Knowledge Treasure Trove"
       bannerTitle="Explore FutureTech's In-Depth Blog Posts"
     />
-    <ButtonSlider />
-
-    <div class="flex flex-col gap-[30px] px-4 py-10">
-      <div class="flex h-fit items-center justify-between">
-        <div class="flex items-center gap-2">
-          <img
-            src="@/assets/Imageavatar-1.jpg"
-            alt="Avatar"
-            class="h-[60px] w-[60px] rounded-full"
-          />
-          <div>
-            <h4 class="text-lg leading-[150%] font-semibold tracking-[-0.03em]">John Techson</h4>
-            <p class="text-grey-60 text-sm leading-[150%] tracking-[-0.03em]">Quantum Computing</p>
-          </div>
-        </div>
-        <router-link
-          to="/"
-          class="border-dark-15 bg-dark-08 flex h-fit items-center justify-center gap-1 rounded-lg border px-5 py-3.5 lg:hidden"
-        >
-          <div class="text-grey-60 text-sm">View Blog</div>
-          <ArrowUpRightIcon class="dark:text-yellow-55 3xl:size-6 size-5" />
-        </router-link>
-      </div>
-      <div class="flex flex-col gap-5">
-        <h4 class="text-grey-60 font-semibold">October 15,2023</h4>
-        <div class="flex flex-col gap-1">
-          <h3 class="text-lg font-semibold">The Quantum Leap in Computing</h3>
-          <p class="text-grey-60 text-sm">
-            Explore the revolution in quantum computing, its applications, and its potential impact
-            on various industries.
-          </p>
-        </div>
-      </div>
-    </div>
+    <BlogSection />
   </div>
 </template>
