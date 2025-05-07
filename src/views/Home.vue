@@ -1,8 +1,9 @@
 <script setup>
+import BlogSection from '@/components/home/BlogSection.vue'
 import FeatureSection from '@/components/home/FeatureSection.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
+import ResourceSection from '@/components/home/ResourceSection.vue'
 import { useTitle } from '@vueuse/core'
-import BlogSection from '../components/home/BlogSection.vue'
 
 useTitle('Home | FutureTech')
 </script>
@@ -12,5 +13,6 @@ useTitle('Home | FutureTech')
     <HeroSection />
     <FeatureSection />
     <BlogSection />
+    <ResourceSection />
   </div>
 </template>

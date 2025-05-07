@@ -8,8 +8,11 @@ import avatar2 from '@/assets/Imageavatar-2.jpg'
 import avatar3 from '@/assets/Imageavatar-3.jpg'
 import avatar4 from '@/assets/Imageavatar-4.jpg'
 import { ArrowUpRightIcon } from '@heroicons/vue/24/outline'
-import HeroFeatureCard from './HeroFeatureCard.vue'
+import AvatarGroup from '../AvatarGroup.vue'
 import StatCard from '../ui/StatCard.vue'
+import HeroFeatureCard from './HeroFeatureCard.vue'
+
+const avatarLinks = [avatar1, avatar2, avatar3, avatar4]
 </script>
 <template>
   <div class="border- border-dark-15 flex flex-col xl:flex-row">
@@ -61,28 +64,11 @@ import StatCard from '../ui/StatCard.vue'
       class="3xl:basis-[42%] 2xl:border-dark-15 3xl:pt-[300px] relative w-full px-10 pt-[100px] pb-10 md:pt-[150px] xl:basis-[40%] 2xl:basis-[40%] 2xl:border-l 2xl:pt-[250px]"
     >
       <div class="relative flex h-full flex-col justify-end gap-5 xl:gap-[30px]">
-        <div class="bg-dark-08 border-dark-15 relative z-50 flex w-fit rounded-full border p-2">
-          <img
-            :src="avatar1"
-            alt="avatar"
-            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 h-[50px] w-[50px] rounded-full border-2"
-          />
-          <img
-            :src="avatar2"
-            alt="avatar"
-            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 -ml-3 h-[50px] w-[50px] rounded-full border-2"
-          />
-          <img
-            :src="avatar3"
-            alt="avatar"
-            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 -ml-3 h-[50px] w-[50px] rounded-full border-2"
-          />
-          <img
-            :src="avatar4"
-            alt="avatar"
-            class="3xl:w-[60px] 3xl:h-[60px] border-dark-40 -ml-3 h-[50px] w-[50px] rounded-full border-2"
-          />
-        </div>
+        <AvatarGroup
+          :avatarLinks="avatarLinks"
+          class="border-dark-15 rounded-full border"
+          imgClass="h-[50px] w-[50px] 3xl:w-[60px] 3xl:h-[60px]"
+        />
 
         <div class="flex flex-col gap-1">
           <h4 class="text-lg leading-[150%] font-medium tracking-[-0.03em] xl:text-2xl">

@@ -23,7 +23,7 @@ defineProps({
     <router-link
       v-if="showButton"
       :to="buttonLink"
-      class="flex w-full md:w-fit bg-dark-08 border border-dark-15 rounded-lg px-5 py-3.5 justify-center items-center gap-1 text-sm 3xl:text-lg text-grey-60 hover:bg-dark-15"
+      class="flex w-full md:w-fit bg-dark-08 border hover:bg-dark-15 hover:border-dark-25 border-dark-15 rounded-lg px-5 py-3.5 justify-center items-center gap-1 text-sm 3xl:text-lg text-grey-60 whitespace-nowrap"
     >
       <div>{{ buttonLabel }}</div>
       <ArrowUpRightIcon class="size-5 dark:text-yellow-55 3xl:size-6" />
