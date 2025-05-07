@@ -26,7 +26,9 @@ const props = defineProps({
             {{ props.subTitle }}
           </p>
         </div>
-        <button class="3xl:p-3.5 bg-yellow-55 rounded-full p-2.5 group-hover:bg-yellow-400 xl:p-3">
+        <button
+          class="3xl:p-3.5 bg-yellow-55 cursor-pointer rounded-full p-2.5 group-hover:bg-yellow-400 xl:p-3"
+        >
           <ArrowUpRightIcon class="3xl:size-6 size-5 dark:text-black" />
         </button>
       </div>
