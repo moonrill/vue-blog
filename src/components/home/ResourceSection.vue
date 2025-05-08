@@ -48,6 +48,7 @@ const avatarLinks = [avatar1, avatar2, avatar3, avatar4]
     topicCount="Over 50 whitepapers"
     previewLink="/"
     authorExpertise="Whitepapers are authored by subject matter experts with an average of 20 years of experience."
+    class="border-b-0"
   />
 </template>
 

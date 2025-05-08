@@ -3,6 +3,7 @@ import BlogSection from '@/components/home/BlogSection.vue'
 import FeatureSection from '@/components/home/FeatureSection.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
 import ResourceSection from '@/components/home/ResourceSection.vue'
+import TestimonialSection from '@/components/home/TestimonialSection.vue'
 import { useTitle } from '@vueuse/core'
 
 useTitle('Home | FutureTech')
@@ -14,5 +15,6 @@ useTitle('Home | FutureTech')
     <FeatureSection />
     <BlogSection />
     <ResourceSection />
+    <TestimonialSection />
   </div>
 </template>
